@@ -2,10 +2,9 @@
 
 int main()
 {
-        int a;
-        int b;
+        int a, b;
 
-        std::cout << "a: ";
+        std::cout << "Please enter values\n" << "a: ";
         std::cin >> a;
 
         std::cout << "b: ";
