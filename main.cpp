@@ -17,6 +17,11 @@ int main()
                 return -1;
         }
 
+        if (a < 0 || b < 0) {
+                std::cout << "Invalid numbers" << std::endl;
+                return -1;
+        }
+
         std::cout << a << " + " << b << " = " << a + b << std::endl;
 >>>>>>> 4c05c65... Check for negative numbers
 
