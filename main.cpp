@@ -12,6 +12,6 @@ int main()
         std::cin >> b;
 
         std::cout << a << " + " << b << " = " << a + b << std::endl;
-
+        std::cout << "My first commit" << std::endl;
         return 0;
 }
