@@ -1,17 +1,22 @@
 #include <iostream>
+#include <vector>
+
+using namespace std;
 
 int main()
 {
         int a;
         int b;
 
-        std::cout << "a: ";
-        std::cin >> a;
+        cout << "a: ";
+        cin >> a;
 
-        std::cout << "b: ";
-        std::cin >> b;
+        cout << "b: ";
+        cin >> b;
 
-        std::cout << a << " + " << b << " = " << a + b << std::endl;
+        cout << a << " + " << b << " = " << a + b << std;
+
+		cout << "New Branch" << endl;
 
         return 0;
 }
