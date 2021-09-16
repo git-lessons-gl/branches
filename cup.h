@@ -23,6 +23,15 @@ typedef enum
 
 } cup_size_t;
 
+class Cup
+{
+private:
+    cup_materal_t material;
+    int volume;
+    cup_size_t size;
 
+public:
+    Cup(cup_materal_t mat, int vol, cup_size_t sz);
+};
 
 #endif // BRANCHES_CUP_H
