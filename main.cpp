@@ -2,8 +2,8 @@
 
 int main()
 {
-        int a;
-        int b;
+        double a;
+        double b;
 
         std::cout << "a: ";
         std::cin >> a;
