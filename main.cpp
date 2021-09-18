@@ -1,5 +1,7 @@
 #include <iostream>
 #include <functional>
+#include <string>
+#include <stdexcept> 
 #include <stdlib.h>
 
 template<typename T>
@@ -13,10 +15,15 @@ int main(int argc, char **argv)
 	int b;
 	
 	if (argc == 3) {
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		sumAndPrint(a, b);
-		return 0;
+		try {
+			a = std::stoi(std::string(argv[1]));
+			b = std::stoi(std::string(argv[2]));
+			sumAndPrint(a, b);
+		} catch(std::invalid_argument& except) {
+			std::cerr << "ERROR! Invalid arguments! \nPlease enter two integer number or none.\n";
+			exit (EXIT_FAILURE);
+		}
+		exit (EXIT_SUCCESS);
 	}
 	
 	std::cout << "a: ";
@@ -27,5 +34,5 @@ int main(int argc, char **argv)
 	
 	sumAndPrint(a, b);
 	
-	return 0;
+	exit (EXIT_SUCCESS);
 }
