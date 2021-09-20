@@ -11,7 +11,7 @@ int main()
         std::cout << "b: ";
         std::cin >> b;
 
-        std::cout << a << " + " << b << " = " << a + b << std::endl;
+        std::cout << a << " + " << b << " = " << a + b << "\n";
 
         return 0;
 }
