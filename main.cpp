@@ -5,10 +5,10 @@ int main()
         int a;
         int b;
 
-        std::cout << "a: ";
+        std::cout << "Hello User\na= ";
         std::cin >> a;
 
-        std::cout << "b: ";
+        std::cout << "b= ";
         std::cin >> b;
 
         std::cout << a << " + " << b << " = " << a + b << std::endl;
