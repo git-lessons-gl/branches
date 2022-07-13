@@ -1,5 +1,5 @@
 #include <iostream>
 
 void feature(){
-	std::cout << "feature" << std::endl;
+	std::cout << "Feature" << std::endl;
 }
