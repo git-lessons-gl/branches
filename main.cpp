@@ -1,5 +1,10 @@
 #include <iostream>
 
+int add(int a, int b)
+{
+        return a + b;
+}
+
 int main()
 {
         int a;
@@ -11,7 +16,7 @@ int main()
         std::cout << "b: ";
         std::cin >> b;
 
-        std::cout << a << " + " << b << " = " << a + b << std::endl;
+        std::cout << a << " + " << b << " = " << add(a, b) << std::endl;
 
         return 0;
 }
