@@ -5,7 +5,7 @@ int main()
         int a;
         int b;
 
-        std::cout << "a: ";
+        std::cout << "Hello User\na: ";
         std::cin >> a;
 
         std::cout << "b: ";
